@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- CONFIG FIREBASE -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>  -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+
+    <title>COMENTARIOS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col s12">
+            <div class="row card-panel">
+                <div class="input-field col s12 center">
+                    <input type="text" id="comment" placeholder="Ingresa un comentario" class="validate" required>
+                    <button class="btn purple darken-1" type="submit" id="btnsave"onclick="uploadComment()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contenido"></div>
+
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
